@@ -1,2 +1,2 @@
-# Joon.github.io
+# joongeun.github.io
 Personal website
