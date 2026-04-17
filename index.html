@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Joon (Joongeun) Choi | Berkeley Mechanical Engineering</title>
+    <title>Joon Choi | Berkeley Mechanical Engineering</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-        /* Berkeley & Dark Mode Theme */
         :root {
-            --uc-berkeley-blue: #003262;
             --cal-gold: #FDB515;
             --bg-dark: #0d1117;
             --card-bg: #161b22;
@@ -20,64 +18,24 @@
         .KW_progressContainer { position: fixed; top: 0; z-index: 1000; width: 100%; height: 4px; background: #222; }
         .KW_progressBar { height: 4px; background: var(--cal-gold); width: 0%; }
 
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
-            background-color: var(--bg-dark); 
-            color: var(--text-main); 
-            margin: 0; 
-            padding: 0;
-            line-height: 1.6;
-        }
-
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background-color: var(--bg-dark); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-
         header { border-bottom: 1px solid var(--border-color); padding-bottom: 40px; margin-bottom: 40px; }
         .intro-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: center; }
-        .profile-img { width: 100%; border-radius: 12px; border: 1px solid var(--border-color); }
+        .profile-img { width: 100%; border-radius: 12px; border: 2px solid var(--border-color); }
         h1 { font-size: 2.5rem; color: var(--text-bright); margin: 0; }
         .tagline { font-weight: bold; color: var(--cal-gold); font-size: 1.1rem; }
-
         h2 { font-size: 1.8rem; color: var(--text-bright); border-left: 5px solid var(--cal-gold); padding-left: 15px; margin-top: 60px; }
         .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+        .project-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; transition: 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
         .project-card:hover { border-color: var(--cal-gold); transform: translateY(-5px); }
         .project-card h3 { margin: 0 0 10px 0; color: var(--cal-gold); font-size: 1.1rem; }
-        .project-card p { font-size: 0.9rem; color: #8b949e; margin-bottom: 15px; }
-        .btn-link { font-size: 0.8rem; font-weight: bold; color: var(--text-bright); text-transform: uppercase; border: 1px solid var(--border-color); padding: 5px 10px; border-radius: 4px; display: inline-block; width: fit-content; }
-
-        footer { 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            margin-top: 80px; 
-            padding-bottom: 40px; 
-            border-top: 1px solid var(--border-color);
-            padding-top: 40px;
-        }
-
-        .map-container { 
-            margin-top: 20px; 
-            max-width: 200px; /* Constrains the map size to be subtle like Bjorn's globe */
-            opacity: 0.7; 
-            transition: opacity 0.3s;
-        }
-        .map-container:hover { opacity: 1; }
+        .btn-link { font-size: 0.8rem; font-weight: bold; color: var(--text-bright); text-transform: uppercase; border: 1px solid var(--border-color); padding: 5px 10px; border-radius: 4px; width: fit-content; margin-top: 10px; }
         
-        @media (max-width: 768px) {
-            .intro-grid, .project-grid { grid-template-columns: 1fr; }
-        }
+        footer { margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; }
+        .map-container { margin-top: 20px; display: inline-block; min-height: 100px; }
+
+        @media (max-width: 768px) { .intro-grid, .project-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -89,7 +47,7 @@
         <div class="intro-grid">
             <img src="https://via.placeholder.com/300x300/161b22/FDB515?text=Joon" class="profile-img">
             <div>
-                <h1>Joon (Joongeun) Choi</h1>
+                <h1>Joon Choi</h1>
                 <p class="tagline">Mechanical Engineering @ UC Berkeley</p>
                 <p>Focused on robotics, automation, and sustainable engineering. Developing autonomous systems and fine-tuning intelligence for climate research.</p>
                 <div style="margin-top: 20px;">
@@ -100,44 +58,26 @@
         </div>
     </header>
 
-    <h2>Social Impact</h2>
-    <div class="project-grid" style="grid-template-columns: 1fr;">
-        <div class="project-card">
-            <div>
-                <h3>ReMove Waste Mitigation</h3>
-                <p>Co-leading the <strong>ReMove</strong> project, which won the Civic Innovation Challenge and reached the finals of the Berkeley Big Ideas Contest. We collaborate with City of Berkeley officials and university leadership to develop circular economy solutions and partnerships that mitigate illegal dumping and university move-out waste.</p>
-            </div>
-        </div>
-    </div>
-
     <h2>Hardware & Robotics</h2>
     <div class="project-grid">
         <a class="project-card" href="https://github.com/Joongeun/Agrobot">
-            <div>
-                <h3>Agrobot</h3>
-                <p>Autonomous spherical robot for site accessibility monitoring. Features LiDAR integration and predictive path planning.</p>
-            </div>
+            <h3>Agrobot</h3>
+            <p>Autonomous spherical robot for site monitoring. Features LiDAR integration and predictive path planning.</p>
             <span class="btn-link">View Codes</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/The-Cheeze-Grater-Battlebot">
-            <div>
-                <h3>Combat Robot</h3>
-                <p>"The Cheeze Grater" design, documentation, and competition videos for a custom 3lb bot.</p>
-            </div>
+            <h3>Combat Robot</h3>
+            <p>"The Cheeze Grater" design, documentation, and competition videos for a custom 3lb bot.</p>
             <span class="btn-link">View Project</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/Modular_Hydroponics">
-            <div>
-                <h3>Modular Hydroponics</h3>
-                <p>PCB schematics and CAD for automated plant growth systems.</p>
-            </div>
+            <h3>Modular Hydroponics</h3>
+            <p>PCB schematics and CAD for automated plant growth systems.</p>
             <span class="btn-link">CAD Files</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/Badminton-Shuttle-Launcher">
-            <div>
-                <h3>Shuttle Launcher</h3>
-                <p>Arduino code and circuit diagrams for a custom badminton training prototype.</p>
-            </div>
+            <h3>Shuttle Launcher</h3>
+            <p>Arduino code and circuit diagrams for a custom badminton training prototype.</p>
             <span class="btn-link">Explore</span>
         </a>
     </div>
@@ -145,37 +85,40 @@
     <h2>Software & AI Research</h2>
     <div class="project-grid">
         <a class="project-card" href="https://github.com/Joongeun/MIT-Internship-2024">
-            <div>
-                <h3>MIT Research (2024)</h3>
-                <p>Fine-tuning Large Language Models for climate change research and Earth system modeling.</p>
-            </div>
+            <h3>MIT Research (2024)</h3>
+            <p>Fine-tuning Large Language Models for climate change research and Earth system modeling.</p>
             <span class="btn-link">Python Scripts</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/IUPUI-Internship-2023">
-            <div>
-                <h3>IUPUI ML Research</h3>
-                <p>Predictive machine learning models and documentation for vaping-cessation research.</p>
-            </div>
+            <h3>IUPUI ML Research</h3>
+            <p>Predictive machine learning models and documentation for vaping-cessation research.</p>
             <span class="btn-link">Research Docs</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/Multi-Agent-System-with-Human-in-the-Loop-Feedback-for-CMOS-Sizing">
-            <div>
-                <h3>CMOS Multi-Agent System</h3>
-                <p>Implementing human-in-the-loop feedback to optimize CMOS sizing parameters.</p>
-            </div>
+            <h3>CMOS Multi-Agent System</h3>
+            <p>Implementing human-in-the-loop feedback to optimize CMOS sizing parameters.</p>
             <span class="btn-link">View Logic</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/cal_gym_crowd_meter_scraper">
-            <div>
-                <h3>Gym Capacity Scraper</h3>
-                <p>Automated RSF capacity monitoring using Python and GitHub Action workflows.</p>
-            </div>
+            <h3>Gym Capacity Scraper</h3>
+            <p>Automated RSF capacity monitoring using Python and GitHub Action workflows.</p>
             <span class="btn-link">Live Data</span>
         </a>
     </div>
 
+    <h2>Social Impact</h2>
+    <div class="project-grid" style="grid-template-columns: 1fr;">
+        <a class="project-card" href="https://news.berkeley.edu/2026/02/13/wildfire-safety-to-move-out-waste-uc-berkeley-students-pitch-fixes-for-top-city-problems/">
+            <div>
+                <h3>ReMove Waste Mitigation</h3>
+                <p>Winner of the Civic Innovation Challenge. We develop circular economy solutions and partnerships to mitigate illegal dumping and university move-out waste. Featured in Berkeley News.</p>
+            </div>
+            <span class="btn-link">Read the News Article</span>
+        </a>
+    </div>
+
     <footer>
-        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Joongeun Choi | Berkeley Mechanical Engineering</p>
+        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Joon Choi | Berkeley Mechanical Engineering</p>
         
         <div class="map-container">
             <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=tEBHRjwGVb0S9XJhuvVvtTLeU_LuVVgj8V20YSAxEkw&cl=ffffff&w=a"></script>
