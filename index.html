@@ -23,18 +23,30 @@
         header { border-bottom: 1px solid var(--border-color); padding-bottom: 40px; margin-bottom: 40px; }
         .intro-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: center; }
         .profile-img { width: 100%; border-radius: 12px; border: 2px solid var(--border-color); }
+        
         h1 { font-size: 2.5rem; color: var(--text-bright); margin: 0; }
         .tagline { font-weight: bold; color: var(--cal-gold); font-size: 1.1rem; }
         h2 { font-size: 1.8rem; color: var(--text-bright); border-left: 5px solid var(--cal-gold); padding-left: 15px; margin-top: 60px; }
+        
         .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .project-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; transition: 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
-        .project-card:hover { border-color: var(--cal-gold); transform: translateY(-5px); }
+        .project-card:hover { border-color: var(--cal-gold); transform: translateY(-3px); }
         .project-card h3 { margin: 0 0 10px 0; color: var(--cal-gold); font-size: 1.1rem; }
+        
         .btn-link { font-size: 0.8rem; font-weight: bold; color: var(--text-bright); text-transform: uppercase; border: 1px solid var(--border-color); padding: 5px 10px; border-radius: 4px; width: fit-content; margin-top: 10px; }
         
         footer { margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; }
-        .map-container { margin-top: 20px; display: inline-block; min-height: 100px; }
-
+        
+        /* Mimicking Bjorn's small widget style */
+        .map-wrapper { 
+            display: inline-block; 
+            width: 160px; /* Small footprint like Bjorn's globe */
+            margin-top: 20px;
+            filter: grayscale(40%) brightness(0.9);
+            transition: 0.3s;
+        }
+        .map-wrapper:hover { filter: grayscale(0%) brightness(1.1); }
+        
         @media (max-width: 768px) { .intro-grid, .project-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -67,7 +79,7 @@
         </a>
         <a class="project-card" href="https://github.com/Joongeun/The-Cheeze-Grater-Battlebot">
             <h3>Combat Robot</h3>
-            <p>"The Cheeze Grater" design, documentation, and competition videos for a custom 3lb bot.</p>
+            <p>"The Cheeze Grater" design, documentation, and competition videos.</p>
             <span class="btn-link">View Project</span>
         </a>
         <a class="project-card" href="https://github.com/Joongeun/Modular_Hydroponics">
@@ -120,7 +132,7 @@
     <footer>
         <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Joon Choi | Berkeley Mechanical Engineering</p>
         
-        <div class="map-container">
+        <div class="map-wrapper">
             <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=tEBHRjwGVb0S9XJhuvVvtTLeU_LuVVgj8V20YSAxEkw&cl=ffffff&w=a"></script>
         </div>
     </footer>
