@@ -37,15 +37,20 @@
         
         footer { margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; }
         
-        /* Mimicking Bjorn's small widget style */
         .map-wrapper { 
             display: inline-block; 
-            width: 160px; /* Small footprint like Bjorn's globe */
+            width: 50px; /* Reduced from 160px to be very small */
             margin-top: 20px;
-            filter: grayscale(40%) brightness(0.9);
+            filter: grayscale(100%); /* Makes it blend in */
+            opacity: 0.5; /* Makes it subtle */
             transition: 0.3s;
         }
-        .map-wrapper:hover { filter: grayscale(0%) brightness(1.1); }
+        
+        .map-wrapper:hover { 
+            filter: grayscale(0%); 
+            opacity: 1; 
+            transform: scale(1.1); /* Slight pop when hovered */
+        }
         
         @media (max-width: 768px) { .intro-grid, .project-grid { grid-template-columns: 1fr; } }
     </style>
