@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joon (Joongeun) Choi | Berkeley Mechanical Engineering</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <style>
+        /* Berkeley & Dark Mode Theme */
+        :root {
+            --uc-berkeley-blue: #003262;
+            --cal-gold: #FDB515;
+            --bg-dark: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-bright: #f0f6fc;
+            --border-color: #30363d;
+        }
+
+        /* Progress Bar */
+        .KW_progressContainer { position: fixed; top: 0; z-index: 1000; width: 100%; height: 4px; background: #222; }
+        .KW_progressBar { height: 4px; background: var(--cal-gold); width: 0%; }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Header / Hero Section */
+        header { border-bottom: 1px solid var(--border-color); padding-bottom: 40px; margin-bottom: 40px; }
+        .intro-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: center; }
+        .profile-img { width: 100%; border-radius: 12px; border: 2px solid var(--border-color); }
+        h1 { font-size: 2.5rem; color: var(--text-bright); margin: 0; }
+        .tagline { font-weight: bold; color: var(--cal-gold); font-size: 1.1rem; }
+
+        /* Project Section Styling */
+        h2 { font-size: 1.8rem; color: var(--text-bright); border-left: 5px solid var(--cal-gold); padding-left: 15px; margin-top: 60px; }
+        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card:hover { border-color: var(--cal-gold); transform: translateY(-5px); }
+        .project-card h3 { margin: 0 0 10px 0; color: var(--cal-gold); font-size: 1.1rem; }
+        .project-card p { font-size: 0.9rem; color: #8b949e; margin-bottom: 15px; }
+        .btn-link { font-size: 0.8rem; font-weight: bold; color: var(--text-bright); text-transform: uppercase; border: 1px solid var(--border-color); padding: 5px 10px; border-radius: 4px; display: inline-block; width: fit-content; }
+
+        /* ClustrMaps Globe Styling - Shrunk to Bjorn's size */
+        .footer-widgets { display: flex; flex-direction: column; align-items: center; margin-top: 80px; padding-bottom: 40px; }
+        .globe-container { width: 60px; height: 60px; overflow: hidden; filter: grayscale(50%) contrast(120%); transition: 0.3s; }
+        .globe-container:hover { filter: grayscale(0%); transform: scale(1.1); }
+        
+        @media (max-width: 768px) {
+            .intro-grid, .project-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="KW_progressContainer"><div class="KW_progressBar" id="myBar"></div></div>
+
+<div class="container">
+    <header>
+        <div class="intro-grid">
+            <img src="https://via.placeholder.com/300x300/161b22/FDB515?text=Joon" class="profile-img">
+            <div>
+                <h1>Joon (Joongeun) Choi</h1>
+                <p class="tagline">Mechanical Engineering @ UC Berkeley</p>
+                <p>Focused on robotics, automation, and machine learning. Developing autonomous navigation systems (Agrobot) and fine-tuning intelligence for climate research.</p>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/Joongeun" style="color:var(--cal-gold); text-decoration: none; margin-right: 20px;">GitHub</a>
+                    <a href="mailto:joongeun@berkeley.edu" style="color:var(--cal-gold); text-decoration: none;">Email</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h2>Hardware & Robotics</h2>
+    <div class="project-grid">
+        <a class="project-card" href="https://github.com/Joongeun/Agrobot">
+            <div>
+                <h3>Agrobot</h3>
+                <p>Autonomous spherical robot for site accessibility monitoring. Built with clear resin and LiDAR integration.</p>
+            </div>
+            <span class="btn-link">View Codes</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/The-Cheeze-Grater-Battlebot">
+            <div>
+                <h3>Combat Robot</h3>
+                <p>"The Cheeze Grater" design, documentation, and competition videos.</p>
+            </div>
+            <span class="btn-link">View Project</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/Modular_Hydroponics">
+            <div>
+                <h3>Modular Hydroponics</h3>
+                <p>PCB schematics and CAD for automated agricultural systems.</p>
+            </div>
+            <span class="btn-link">CAD Files</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/Badminton-Shuttle-Launcher">
+            <div>
+                <h3>Shuttle Launcher</h3>
+                <p>Arduino code, circuit diagrams, and prototype videos.</p>
+            </div>
+            <span class="btn-link">Explore</span>
+        </a>
+    </div>
+
+    <h2>Software & AI Research</h2>
+    <div class="project-grid">
+        <a class="project-card" href="https://github.com/Joongeun/MIT-Internship-2024">
+            <div>
+                <h3>MIT Research (2024)</h3>
+                <p>Fine-tuning Large Language Models for climate change research.</p>
+            </div>
+            <span class="btn-link">Python Scripts</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/IUPUI-Internship-2023">
+            <div>
+                <h3>IUPUI ML Research</h3>
+                <p>Machine learning codes for vaping-cessation research.</p>
+            </div>
+            <span class="btn-link">Research Docs</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/Multi-Agent-System-with-Human-in-the-Loop-Feedback-for-CMOS-Sizing">
+            <div>
+                <h3>CMOS Multi-Agent System</h3>
+                <p>Human-in-the-loop feedback optimization for CMOS sizing.</p>
+            </div>
+            <span class="btn-link">View Logic</span>
+        </a>
+        <a class="project-card" href="https://github.com/Joongeun/cal_gym_crowd_meter_scraper">
+            <div>
+                <h3>RSF Capacity Scraper</h3>
+                <p>Berkeley gym capacity scraper using Python and GitHub workflows.</p>
+            </div>
+            <span class="btn-link">Live Data</span>
+        </a>
+    </div>
+
+    <h2>Global Impact</h2>
+    <div class="project-grid">
+        <a class="project-card" href="https://github.com/Joongeun/Nicaragua-Indonesia-Programming-Camps">
+            <div>
+                <h3>International Programming Camps</h3>
+                <p>Technical workshops conducted in Nicaragua & Indonesia.</p>
+            </div>
+            <span class="btn-link">Presentations</span>
+        </a>
+    </div>
+
+    <footer class="footer-widgets">
+        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Joongeun Choi | Built for Berkeley Engineering</p>
+        
+        <div class="globe-container">
+            <a href="https://clustrmaps.com/site/1boym" title="Visit tracker">
+                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=1boym"></script>
+            </a>
+        </div>
+    </footer>
+</div>
+
+<script>
+    window.onscroll = function() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    };
+</script>
+
+</body>
+</html>
